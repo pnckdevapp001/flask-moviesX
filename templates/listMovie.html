@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>AV API</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../static/css/search-result.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eb1fea530f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      {{/*  <a href="/">
+        <i class="fas fa-angle-left"><span class="back-text">HOME</span></i>
+      </a>  */}}
+      {{/*  <p class="ranking">#{{ movie['id'] }}</p>  */}}
+
+      <div class="grid-container-2">
+        <div>
+          {% for galaxy in galaxies %}
+            <img src="{{ galaxy['backdrop_path'] }}" class="poster-image" />
+            
+          {% endfor %}
+          
+        </div>
+        <div>
+          {{/*  <h3 class="poster-title">{{ movie['original_name'] }}</h3>
+          <p class="year-released">{{ movie['dso_title'] }}</p>
+          <p class="dummy-desc">{{ movie['first_air_date'] }}</p>
+          <p class="actors"><b>Starring actors:</b> {{ movie['vote_average'] }}</p>  */}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
